@@ -1,0 +1,39 @@
+.page_top {width: 100%;border-bottom: 1px solid #eee;line-height: 30px;background: #f7f7f7;color: #666;}
+.layout {width: 950px;margin: 0 auto;}
+.page_top .layout {height: 30px;line-height: 30px;background: #f7f7f7;}
+.pull-left {float: left }
+.pull-right {float: right;}
+ul, ol {margin-top: 0px;margin-bottom: 10px;}
+.layout>.pull-left>a:hover,.layout>.pull-right>a:hover{color:#00bf9d;border-bottom:lpx solid #00bf9d;}
+.page_top .dropdown-menu {margin-top: 0px;border: 1px solid #DDD;border-radius: 0 0 4px 4px;font-size: 12px;}
+.dropdown-menu {position: absolute;left: 0px;float: left;padding: 5px 0;margin: 2px 0 0;font-size: 14px;text-align: left;background-color: #fff;background-clip: padding-box;border: 1px solid #ccc;display:none;}
+.dropdown:hover .dropdown-menu{display:block;}
+.page_top ul li {float: left;padding: 0 8px 0 9px;position: relative;}
+.page_top ul li s {position: absolute;top: 9px;left: 0px;height: 12px;border-left: 1px solid #DDD;overflow: hidden;}
+.page_top a {margin: 0 5px;}
+.glyphicon {position: relative;display: inline-block;}
+.dropdown-menu > li > a {display: block;padding: 3px 20px;clear: both;font-weight: 400;color: #333;white-space: nowrap;padding: 3px 10px;}
+.caret {display: inline-block;margin-left: 2px;vertical-align: middle;border-top: 4px solid;border-right: 4px solid transparent;border-left: 4px solid transparent;}
+.userSettingBox {border: 1px solid #EEE;padding: 30px 25px;margin: 0 auto;background: #FFF;
+	margin-top: 25px;}
+.layout {width: 950px;margin: 0 auto;}
+body {margin: 0;}
+body {font-size: 14px;color: #333;background-color: #fff;}
+body {font-size: 12px;line-height: 1.5em;background: #f8f8f8;}
+.regform {width: 600px;border-right: 1px solid #dbdbdb;float: left;padding-right: 30px;}
+.regot {padding-left: 30px;float: left;border-left: 1px solid #FFF;}
+.regot .loginXSD {padding-top: 10px;border-top: 1px dashed #ddd;margin-top: 5px;}
+.btn {display: inline-block;padding: 6px 12px;font:400 14px/1 ""; text-align: center;white-space: nowrap;vertical-align: middle;cursor: pointer;border-radius: 4px;}
+.btn-warning {color: #fff;background-color: #f0ad4e;border-color: #eea236;}
+.btn-danger {color: #fff;background-color: #d9534f;border-color: #d43f3a;}
+.btn-sm, .btn-group-sm > .btn {padding: 5px 10px;font-size: 12px;border-radius: 3px;}
+.w180 {width: 180px;}
+.form-group {margin-bottom: 15px;}
+.form-horizontal .form-group {margin-right: -15px;margin-left: -15px;}
+.regform .form-group {margin-bottom: 20px;}
+.form-horizontal .control-label {padding-top: 7px;}
+.regform .control-label {padding-right: 0px;width: 120px;} 
+ button, select {text-transform: none;}
+.radio, .checkbox {position: relative;display: block;margin:10px 0;}
+.radio label, .checkbox label {padding-left: 20px;font-weight: 400;cursor: pointer;}
+.form-control {width:60%;height: 30px;padding: 6px 12px;font-size: 14px;color: #555;background: #fff;border: 1px solid #ccc;border-radius: 6px;margin:10px ;}

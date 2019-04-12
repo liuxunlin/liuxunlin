@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>花语鲜花网</title>
+	<link rel="stylesheet" href="css/reg.css">
+	<link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+	<div class="page_top">
+		<div class="layout clear">
+			<div class="pull-left">欢迎来到花语鲜花礼品网，请<a
+					href="login.html">登录</a>
+				或 <a href="reg.html">注册</a></div>
+			<ul class="pull-right">
+				<li><a href="#">我的订单</a></li>
+				<li class="dropdown"><s></s><a class="dropdown-toggle">客户服务<span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#" target="_blank">帮助中心</a></li>
+						<li><a href="#" target="_blank" rel="nofollow">售后服务</a>
+						</li>
+						<li><a href="#" target="_blank" rel="nofollow">在线客服</a></li>
+					</ul>
+				</li>
+				<li><s></s><a href="">收藏本站</a></li>
+				<li><s></s><a href="#">购物车</a></li>
+			</ul>
+		</div>
+	</div>
+<div class="layout">
+	<div class="userSettingBox clear">
+		<div class="regform" >
+			<form name="regUserForm" class="form-horizontal" id="regUserForm" action="/reg" method="post">
+				<div class="form-group">
+					<b class="red">*</b>账户名：
+					<div>
+				   <input name="regName" class="form-control" type="text" placeholder="手机号/Eamil"
+						id="user">
+					</div>
+				</div>
+				<div class="form-group">
+					<b class="red">*</b>设置密码：
+					<div>
+					</div>
+					<input name="password" class="form-control" type="text" id="pass">
+					</div>
+					<div class="form-group">
+						<b class="red">*</b>再次输入密码：
+					<div>
+						<input name="password" class="form-control" type="text" id="pass2">
+				    </div>
+					</div>
+				<div class="form-group" ><label class="control-label"></label>
+					<div class="checkbox"><label><input id="readme" type="checkbox" checked="checked">
+							我已阅读并同意<a class="blue" href="#">《维纳斯鲜花礼品网用户注册协议》</a></label></div>
+				</div>
+				<div class="form-group"><label class="control-label"></label>
+					<div class="tips"> 
+						<input type="button" name="btn" id="btn" value="注册"  class="btn btn-danger btn-sm w180"/>
+						<span></span>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="regot">
+			<div class="loginXSD">
+				<p>已有维纳斯鲜花礼品网帐号</p><a class="btn btn-warning btn-sm w180" href="login.html">登录</a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="js/jquery.2.2.4.js"></script>
+<script src="js/cookie.js"></script>
+<script>
+$("#user").on("blur", function () {
+    var reg = /^[\u2E80-\u9FFF\w\-]{4,20}$/;
+    if (reg.test($(this).value)) {
+        $(this).next().html("√");
+        uonOff = true;
+    } else {
+        $(this).next().html("请输入4位以上");
+        uonOff = false;
+    }
+});
+
+$("#pass").on("blur", function () {
+    var a = b = c = 0;
+    var numReg = /\d+/;
+    if (numReg.test($(this).value)) a = 1;
+    var azReg = /[a-zA-Z]+/;
+    if (azReg.test($(this).value)) b = 1;
+    var tsReg = /[\~\!\@\#\$\%\^\&\*\(\)\_\+\`\-\=\{\}\[\]\\|\;\'\:\"\,\.\/\<\>\?]+/;
+    if (tsReg.test($(this).value)) c = 1;
+    ponOff = true;
+    switch (a + b + c) {
+        case 1:
+            $(this).next().html("易");break;
+        case 2:
+            $(this).next().html("中");break;
+        case 3:
+            $(this).next().html("难");break;
+        default:
+            $(this).next().html("请输入正确的密码");
+            ponOff = false;
+    }
+
+    if ($("pass2").value === $(this).value) {
+        $("#pass2").next().html("√");
+        p2onOff = true;
+    } else {
+        $("pass").next().html("密码输入不一致");
+        p2onOff = false;
+    }
+});
+
+$("#pass2").on("blur", function () {
+    if ($("pass").value === $(this).value) {
+        $(this).next().html("√");
+        p2onOff = true;
+    } else {
+        $(this).next().html("密码输入不一致");
+        p2onOff = false;
+    }
+});
+
+// var Register = function () {
+//     function Register() {
+//         classCallCheck(this, Register);
+
+//         this.url = "http://www.icodeilife.cn/ctrl/register.php";
+
+//         this.init();
+//     }
+
+//     createClass(Register, [{
+//          key: "init",
+//         value: function init() {
+//             var that = this;
+//             $("#btn").click(function () {
+//                 if (uonOff && ponOff && p2onOff) {
+//                     that.load();
+//                 }
+//             });
+//         }
+//     }, {
+//         key: "load",
+//         value: function load() {
+//             $.ajax({
+//                 url: this.url,
+//                 success: function success(res) {
+//                     switch (res) {
+//                         case "0":
+//                             $("#user").html("用户名重复");break;
+//                         case "1":
+//                             setTimeout(function () {
+//                                 location.href = "http://localhost/huayu/reg.html";
+//                             }, 1000);
+//                             break;
+//                         case "2":
+//                             $("tips span").html("数据不全");break;
+//                     }
+//                 },
+//                 data: {
+//                     tel: $("#user").val(),
+//                     pass: $("#pass").val()
+//                 }
+//             });
+//         }
+//     }]);
+
+//     return Register;
+
+// }();
+
+class Register{
+			constructor(){
+//				1.先准备好接口
+				this.url = "http://www.icodeilife.cn/ctrl/register.php";
+				
+				this.init();
+			}
+			init(){
+				var that = this;
+				$("#btn").click(function(){
+//					3.触发事件时开启ajax
+					that.load()
+				})
+			}
+			load(){
+				$.ajax({
+//					4.使用接口
+					url:this.url,
+//					7.成功之后的处理
+					success:function(res){
+						switch(res){
+							case "0":
+								$(".tips span").html("用户名重复");break;
+							case "1":
+								$(".tips span").html("注册成功，5秒后跳转到登录");
+								setTimeout(()=>{
+									location.href = "login.html";
+								},5000)
+								break;
+							case "2":
+								$(".tips span").html("数据不全");break;
+						}
+					},
+//					5.发送数据
+					data:{
+						tel:$("#user").val(),
+						pass:$("#pass").val()
+					},
+				})
+			}
+		}
+		
+		new Register;
+		
+</script>
+</html>

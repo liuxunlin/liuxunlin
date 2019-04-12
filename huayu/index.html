@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Access-Control-Allow-Origin" content=""http://localhost/huayu/js/shop.json>
+    <link rel="icon" type="image/x-ico" href="image/huayu.ico" />
+    <title>花语鲜花网</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+    <header>
+        <div class="container clear">
+           <ul class="nav navbar-left">
+              <li><a href="">首页</a></li>
+              <li class="sep"><span></span></li>
+              <li><a href="" class="dropdown-toggle highlight">手机维纳斯&nbsp;&nbsp;<img src="image/code1.png" alt="">
+              <img class="code" src="image/code3.jpg" alt="">
+              </a>
+               
+              </li>
+           </ul>
+           <ul class="nav navbar-right clear">
+               <li class="status">
+                   <a href="login.html">登录</a>
+                   <a href="reg.html">注册</a>
+                </li>
+                <li class="sep">
+                    <span></span>
+                </li>
+                <li>
+                    <a href="#" target="_blank">我的订单</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">在线补款</a>
+                </li>
+                <li class="sep">
+                    <span></span>
+                    </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">客服服务
+                    <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#" target="_blank">帮助中心</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">售后服务</a>
+                        </li>
+                        <li>
+                            <a href="#">在线客服</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sep">
+                    <span></span>
+                </li>
+                <li>
+                    <a href="#">收藏本站</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="bgwhite">
+        <div class="container">
+           <div class="toplogo">
+               <img src="image/logo.png" class="logo" alt="">
+               <div class="search">
+                  <form action="" method="" class="clear mt10">
+                  <input class="sea" type="search" name="keywords" value="" placeholder="关键字">
+                  <button class="sub" type="submit">搜索</button>
+                </form>
+                <p class="mt10">
+                    <a href="#" target="_blank">玫瑰花</a>
+                    <span class="b-sep"></span>
+                    <a href="#" target="_blank">保鲜花</a>
+                    <span class="b-sep"></span>
+                    <a href="#" target="_blank">生日蛋糕</a>
+                    <span class="b-sep"></span>
+                    <a href="#" target="_blank">开业花篮</a>
+                    <span class="b-sep"></span>
+                    <a href="#" target="_blank">99朵玫瑰</a>
+                    </p>
+               </div>
+               <div class="topInfos clear mt15">
+                   <span id="globalCartBox">
+                    <a class="topInfosCart" href="shopcart.html">
+                   <img src="image/shop1.png" alt="">  
+                   <!-- <span id="topCartNum" class="cartNum">0</span>  -->
+                   <span class="cartText">我的购物车</span>
+                  </a>
+                    <div class="topInfosNone">
+                      <div class="empty">您的购物车中没有商品，
+                     </div> 
+                    </div>
+                    </span>
+                     <a class="topInfosAsk" href="">
+                     <img src="image/service.png" alt="">
+                      <span class="cartText">在线咨询</span>
+                    </a>
+               </div>
+           </div>
+        </div>
+    </div>
+    <nav class="mainnav">
+        <div class="container">
+          <ul class="clear">
+              <li class="all drapdown" id="show">
+                  <a href="#" id="allshop">全部商品</a>
+                      <ul class="drapdown-nav">
+                        <li><h4><a href="#">送花用途</a> <img src="image/right.png" alt=""></h4>
+                            <p><a href="#" title="浪漫爱情" target="_blank">浪漫爱情</a><a href="#" title="生日快乐" target="_blank">生日快乐</a><a href="#" title="友谊用花" target="_blank">友谊用花</a><a href="#" title="祝福用花" target="_blank">祝福用花</a><a href="#" title="商业用花" target="_blank">商业用花</a><a href="#" title="致歉用花" target="_blank">致歉用花</a>
+                            </p>
+                            <div class="threemean">
+                                    <p class="meanbox"><a href="#" title="浪漫爱情" target="_blank">浪漫爱情</a><a href="#" title="生日快乐" target="_blank">生日快乐</a><a href="#" title="友谊用花" target="_blank">友谊用花</a><a href="#" title="祝福用花" target="_blank">祝福用花</a><a href="#" title="商业用花" target="_blank">商业用花</a><a href="#" title="致歉用花" target="_blank">致歉用花</a>
+                                    </p>
+                            </div>
+                        </li>
+                        <li><h4><a href="#">鲜花花材</a> <img src="image/right.png" alt=""></h4>
+                            <p><a href="#" title="红玫瑰" target="_blank">红玫瑰</a><a href="#" title="香槟玫瑰" target="_blank">香槟玫瑰</a><a href="#" title="康乃馨" target="_blank">康乃馨</a><a href="#" title="白百合" target="_blank">白百合</a><a href="#" title="满天星" target="_blank">满天星</a><a href="#" title="鲜花蛋糕组合" target="_blank">鲜花蛋糕组合</a><a href="#" title="扶郎花" target="_blank">扶郎花</a>
+                            </p>
+                        </li>
+                        <li><h4><a href="#">送花对象</a> <img src="image/right.png" alt=""></h4>
+                            <p><a href="#" title="恋人" target="_blank">恋人</a><a href="#" title="亲人" target="_blank">亲人</a><a href="#" title="长辈" target="_blank">长辈</a><a href="#" title="朋友" target="_blank">朋友</a><a href="#" title="老师" target="_blank">老师</a><a href="#" title="领导" target="_blank">领导</a><a href="#" title="客户" target="_blank">客户</a><a href="#" title="病人" target="_blank">病人</a>
+                            </p>
+                        </li>
+                        <li><h4><a href="#">生日蛋糕</a> <img src="image/right.png" alt=""></h4>
+                            <p><a href="#" title="生日蛋糕" target="_blank">生日蛋糕</a><a href="#" title="儿童蛋糕" target="_blank">儿童蛋糕</a><a href="#" title="祝寿蛋糕" target="_blank">祝寿蛋糕</a>
+                            </p>
+                        </li>
+                        <li><h4><a href="#" title="开业花篮" target="_blank">开业花篮</a> <img src="image/right.png" alt=""></h4>
+                        </li>
+                    </ul>
+              </li>
+              <li class="nv"><a href="#" target="_blank">鲜花</a></li>
+              <li class="nv"><a href="#" target="_blank">蛋糕</a></li>
+              <li class="nv"><a href="#" target="_blank">每周一花</a></li>
+              <li class="nv"><a href="#" target="_blank">开业花篮</a></li>
+              <li class="nv"><a href="#" target="_blank">绿植花卉</a></li>
+              <li class="nv"><a href="#" target="_blank">鲜花百科</a></li>
+          </ul>
+        </div>
+    </nav>
+    <div class="flexslide">
+        <ul class="slides">
+            <li>
+               <a href="#"><img src="http://img.vnasi.com/attachment/achimg/201812/5c22e8df160ed.jpg" alt=""></a> 
+            </li>
+            <li>
+               <a href="#"><img src="http://img.vnasi.com/attachment/achimg/201811/5be3e696366f9.jpg" alt=""></a> 
+            </li>
+            <li>
+                <a href="#"><img src="http://img.vnasi.com/attachment/achimg/201901/5c32c88a6da03.jpg" alt=""></a> 
+            </li>
+            <li>
+                <a href="#"><img src="http://img.vnasi.com/attachment/achimg/201901/5c3fe12161a3a.jpg" alt=""></a> 
+            </li>     
+            <li>
+                <a href="#"><img src="http://img.vnasi.com/attachment/achimg/201901/5c3ef478e9559.jpg" alt=""></a>     
+            </li>    
+        </ul> 
+        <ol class="circle">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <div class="container">
+        <div class="dynamic clear">
+            <div class="homeOrder">
+                  <div class="title oradius">
+                      <img src="image/order.png" alt="">&nbsp; 最新订单
+                  </div>
+                  <div class="newList order">
+                    <ul id="newOrderList" style="margin-top: 0px;">
+                     <li>刚刚网友订购：<a
+                            href="#">梦影天使-19朵香槟玫瑰(精选19朵香槟玫瑰花，尤加利点缀，注意排列整齐（花要新鲜），云丝纸（金色）包装+深墨绿色（丝带）+长方形礼盒装（因城市差异包装礼盒以实物为准），)</a>，送往广东|东莞市|
+                    </li>
+                    <li>刚刚网友订购：<a
+                            href="#">梦影天使-19朵香槟玫瑰(精选19朵香槟玫瑰花，尤加利点缀，注意排列整齐（花要新鲜），云丝纸（金色）包装+深墨绿色（丝带）+长方形礼盒装（因城市差异包装礼盒以实物为准），)</a>，送往广东|东莞市|
+                    </li>
+                    <li>刚刚网友订购：<a
+                            href="#">梦影天使-19朵香槟玫瑰(精选19朵香槟玫瑰花，尤加利点缀，注意排列整齐（花要新鲜），云丝纸（金色）包装深墨绿色（丝带）长方形礼盒装（因城市差异包装礼盒以实物为准），)</a>，<a
+                            href="http://www.vnasi.com/GCB07928.html">维纳斯鲜花贺卡，必须心形贺卡。或者类似心形。如若缺货可用其他精美贺卡替代(爱心贺卡，)</a>，送往陕西|咸阳市|秦都区</li>
+                    <li>刚刚网友订购：<a
+                            href="#">梦影天使-19朵香槟玫瑰(精选19朵香槟玫瑰花，尤加利点缀，注意排列整齐（花要新鲜），云丝纸（金色）包装+深墨绿色（丝带）+长方形礼盒装（因城市差异包装礼盒以实物为准），)</a>，送往广东|东莞市|
+                    </li>
+                    <li>刚刚网友订购：<a
+                            href="#">梦影天使-19朵香槟玫瑰(精选19朵香槟玫瑰花，尤加利点缀，注意排列整齐（花要新鲜），云丝纸（金色）包装+深墨绿色（丝带）+长方形礼盒装（因城市差异包装礼盒以实物为准），)</a>，送往广东|东莞市|
+                    </li>
+                    <li>刚刚网友订购：<a
+                            href="#">梦影天使-19朵香槟玫瑰(精选19朵香槟玫瑰花，尤加利点缀，注意排列整齐（花要新鲜），云丝纸（金色）包装+深墨绿色（丝带）+长方形礼盒装（因城市差异包装礼盒以实物为准），)</a>，送往广东|东莞市|
+                    </li>
+                    <li>刚刚网友订购：<a
+                            href="#">梦影天使-19朵香槟玫瑰(精选19朵香槟玫瑰花，尤加利点缀，注意排列整齐（花要新鲜），云丝纸（金色）包装+深墨绿色（丝带）+长方形礼盒装（因城市差异包装礼盒以实物为准），)</a>，送往广东|东莞市|
+                    </li>
+                    <li>刚刚网友订购：<a
+                            href="#">梦影天使-19朵香槟玫瑰(精选19朵香槟玫瑰花，尤加利点缀，注意排列整齐（花要新鲜），云丝纸（金色）包装+深墨绿色（丝带）+长方形礼盒装（因城市差异包装礼盒以实物为准），)</a>，送往广东|东莞市|
+                    </li>
+                    <li>刚刚网友订购：<a
+                            href="#">梦影天使-19朵香槟玫瑰(精选19朵香槟玫瑰花，尤加利点缀，注意排列整齐（花要新鲜），云丝纸（金色）包装+深墨绿色（丝带）+长方形礼盒装（因城市差异包装礼盒以实物为准），)</a>，送往广东|东莞市|
+                    </li>
+                    <li>刚刚网友订购：<a
+                            href="#">梦影天使-19朵香槟玫瑰(精选19朵香槟玫瑰花，尤加利点缀，注意排列整齐（花要新鲜），云丝纸（金色）包装+深墨绿色（丝带）+长方形礼盒装（因城市差异包装礼盒以实物为准），)</a>，送往广东|东莞市|
+                    </li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="homeNews">
+                <div class="title"> <img src="image/news.png" alt=""> &nbsp; 新闻快报
+                </div>
+                <div class="newsList newList">
+                    <ul id="newsList" style="margin-top: 0px;">
+                        <li><a href="#">维纳斯改版通知</a></li>
+                        <li><a href="#">维纳斯鲜花2016年国庆节鲜花订购配送须知</a></li>
+                        <li><a href="#">维纳斯鲜花安卓手机端开放下载</a></li>
+                        <li><a href="#">维纳斯鲜花礼品网触屏版上线了</a></li>
+                        <li><a href="#">维纳斯鲜花工作时间调整通知</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container">
+    <div class="listsGroup indexLists">
+        <ul class="lists clear" id="jsonlists">
+        </ul>
+    </div>
+    <h3 class="wareTitle clear">热卖推荐<a class="more" href="#">更多&gt;&gt;</a></h3>
+    <div class="listsGroup indexLists">
+        <ul class="lists clear">
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF08171.html"><img class="lazy" style="display: inline;"
+                            src="http://img.vnasi.com/attachment/goods/800/201812/5c209b45071ee.jpg"
+                            data-original="http://img.vnasi.com/attachment/goods/800/201812/5c209b45071ee.jpg"></a></p>
+                <p class="title"><a href="/GF08171.html">一见倾心-99朵红玫瑰花束</a></p>
+                <p class="price"><a href="/GF08171.html">¥499.00</a></p>
+                <p class="others">售出 1300<span class="sep"></span>喜欢 11593</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F08171')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F08171')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF08186.html"><img class="lazy" style="display: inline;"
+                            src="http://img.vnasi.com/attachment/goods/800/201812/5c25cf91d09c1.jpg"
+                            data-original="http://img.vnasi.com/attachment/goods/800/201812/5c25cf91d09c1.jpg"></a></p>
+                <p class="title"><a href="/GF08186.html">那年花开-99朵红玫瑰</a></p>
+                <p class="price"><a href="/GF08186.html">¥568.00</a></p>
+                <p class="others">售出 600<span class="sep"></span>喜欢 9923</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F08186')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F08186')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF06122.html"><img class="lazy" style="display: inline;"
+                            src="http://img.vnasi.com/attachment/goods/800/201711/5a1e080e7c601.jpg"
+                            data-original="http://img.vnasi.com/attachment/goods/800/201711/5a1e080e7c601.jpg"></a></p>
+                <p class="title"><a href="/GF06122.html">挚爱永恒-33枝红玫瑰礼盒</a></p>
+                <p class="price"><a href="/GF06122.html">¥298.00</a></p>
+                <p class="others">售出 2300<span class="sep"></span>喜欢 38035</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F06122')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F06122')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF08224.html"><img class="lazy" style="display: inline;"
+                            src="http://img.vnasi.com/attachment/goods/800/201812/5c285bdb186d8.jpg"
+                            data-original="http://img.vnasi.com/attachment/goods/800/201812/5c285bdb186d8.jpg"></a></p>
+                <p class="title"><a href="/GF08224.html">晶莹剔透-19朵粉玫瑰</a></p>
+                <p class="price"><a href="/GF08224.html">¥258.00</a></p>
+                <p class="others">售出 700<span class="sep"></span>喜欢 10209</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F08224')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F08224')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF08170.html"><img class="lazy" src="http://img.vnasi.com/attachment/goods/800/201812/5c2099a2a166e.jpg"
+                            data-original="http://img.vnasi.com/attachment/goods/800/201812/5c2099a2a166e.jpg"></a></p>
+                <p class="title"><a href="/GF08170.html">甜甜蜜蜜-33朵红玫瑰花束</a></p>
+                <p class="price"><a href="/GF08170.html">¥299.00</a></p>
+                <p class="others">售出 1000<span class="sep"></span>喜欢 12917</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F08170')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F08170')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF06127.html"><img class="lazy" src="http://img.vnasi.com/attachment/goods/800/201704/58ec9e66b03bd.jpg"
+                            data-original="http://img.vnasi.com/attachment/goods/800/201704/58ec9e66b03bd.jpg"></a></p>
+                <p class="title"><a href="/GF06127.html">爱的理由-33朵精品红玫瑰</a></p>
+                <p class="price"><a href="/GF06127.html">¥368.00</a></p>
+                <p class="others">售出 20250<span class="sep"></span>喜欢 60009</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F06127')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F06127')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF05712.html"><img class="lazy" src="http://img.vnasi.com/attachment/goods/800/201812/5c2099a2a166e.jpg"
+                            data-original="http://img.vnasi.com/attachment/goods/800/201903/5c7dd269d726d.jpg"></a></p>
+                <p class="title"><a href="/GF05712.html">梦幻星空-33朵蓝玫瑰</a></p>
+                <p class="price"><a href="/GF05712.html">¥399.00</a></p>
+                <p class="others">售出 2400<span class="sep"></span>喜欢 36185</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F05712')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F05712')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF08226.html"><img class="lazy" src="http://img.vnasi.com/attachment/goods/800/201812/5c285fb6d764c.jpg"
+                            data-original="http://img.vnasi.com/attachment/goods/800/201812/5c285fb6d764c.jpg"></a></p>
+                <p class="title"><a href="/GF08226.html">绚丽多彩-33朵混搭玫瑰</a></p>
+                <p class="price"><a href="/GF08226.html">¥398.00</a></p>
+                <p class="others">售出 900<span class="sep"></span>喜欢 11302</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F08226')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F08226')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+    </ul>
+    </div>
+
+    <h3 class="wareTitle">爱情鲜花<a class="more" href="#">更多&gt;&gt;</a></h3>
+    <div class="listsGroup indexLists">
+     <ul class="lists clear">
+        <li class="listsItem recommend"><a class="listLink" href="/GF05863.html">
+                <p class="imgs"><img class="lazy" src="http://img.vnasi.com/attachment/achimg/201811/5befccd11a027.jpg"></p>
+            </a></li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF08190.html"><img class="lazy" src="http://img.vnasi.com/attachment/goods/800/201812/5c25d4e232bca.jpg"></a></p>
+                <p class="title"><a href="/GF08190.html">一见倾心-99朵混色玫瑰</a></p>
+                <p class="price"><a href="/GF08190.html">¥499.00</a></p>
+                <p class="others">售出 650<span class="sep"></span>喜欢 7973</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F08190')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F08190')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF08221.html"><img class="lazy" src="http://img.vnasi.com/attachment/goods/800/201812/5c283e2ba7476.jpg"></a></p>
+                <p class="title"><a href="/GF08221.html">粉色佳人-33朵粉玫瑰</a></p>
+                <p class="price"><a href="/GF08221.html">¥358.00</a></p>
+                <p class="others">售出 850<span class="sep"></span>喜欢 11643</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F08221')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F08221')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF07982.html"><img class="lazy" src="http://img.vnasi.com/attachment/goods/800/201811/5bea9424c04ce.jpg"></a></p>
+                <p class="title"><a href="/GF07982.html">心仪-19朵红玫礼盒</a></p>
+                <p class="price"><a href="/GF07982.html">¥198.00</a></p>
+                <p class="others">售出 5800<span class="sep"></span>喜欢 16135</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F07982')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F07982')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF08172.html"><img class="lazy" src="http://img.vnasi.com/attachment/achimg/201812/5c297e03040d4.jpg"
+                            data-original="http://img.vnasi.com/attachment/achimg/201812/5c297e03040d4.jpg"></a></p>
+                <p class="title"><a href="/GF08172.html">狂热之心-99朵红玫瑰花束</a></p>
+                <p class="price"><a href="/GF08172.html">¥599.00</a></p>
+                <p class="others">售出 950<span class="sep"></span>喜欢 8228</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F08172')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F08172')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF07992.html"><img class="lazy" src="http://img.vnasi.com/attachment/goods/800/201811/5bebc92977022.jpg"></a></p>
+                <p class="title"><a href="/GF07992.html">黑纱情人-33朵红玫瑰</a></p>
+                <p class="price"><a href="/GF07992.html">¥299.00</a></p>
+                <p class="others">售出 750<span class="sep"></span>喜欢 9560</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F07992')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F07992')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF08220.html"><img class="lazy" src="http://img.vnasi.com/attachment/goods/800/201812/5c28357020aaf.jpg"></a></p>
+                <p class="title"><a href="/GF08220.html">百花争艳-33朵红色粉色玫瑰混搭</a></p>
+                <p class="price"><a href="/GF08220.html">¥358.00</a></p>
+                <p class="others">售出 2250<span class="sep"></span>喜欢 9248</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F08220')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F08220')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF06122.html"><img class="lazy" src="http://img.vnasi.com/attachment/goods/800/201711/5a1e080e7c601.jpg"></a></p>
+                <p class="title"><a href="/GF06122.html">挚爱永恒-33枝红玫瑰礼盒</a></p>
+                <p class="price"><a href="/GF06122.html">¥298.00</a></p>
+                <p class="others">售出 2300<span class="sep"></span>喜欢 38035</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F06122')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F06122')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF07164.html"><img class="lazy" src="http://img.vnasi.com/attachment/goods/800/201711/5a0919826b955.jpg"></a></p>
+                <p class="title"><a href="/GF07164.html">伊人-11朵香槟玫瑰礼盒</a></p>
+                <p class="price"><a href="/GF07164.html">¥158.00</a></p>
+                <p class="others">售出 2100<span class="sep"></span>喜欢 27199</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F07164')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F07164')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF07970.html"><img class="lazy"  src="http://img.vnasi.com/attachment/goods/800/201811/5bffb306e0968.jpg"</a></p>
+                <p class="title"><a href="/GF07970.html">33朵混搭玫瑰花束-女神款</a></p>
+                <p class="price"><a href="/GF07970.html">¥288.00</a></p>
+                <p class="others">售出 550<span class="sep"></span>喜欢 10612</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F07970')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F07970')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+        <li class="listsItem">
+            <div class="listLink">
+                <p class="imgs"><a href="/GF08224.html"><img class="lazy" src="http://img.vnasi.com/attachment/goods/800/201812/5c285bdb186d8.jpg"></a></p>
+                <p class="title"><a href="/GF08224.html">晶莹剔透-19朵粉玫瑰</a></p>
+                <p class="price"><a href="/GF08224.html">¥258.00</a></p>
+                <p class="others">售出 700<span class="sep"></span>喜欢 10209</p>
+                <p class="operation"><button class="btn btn-default" onclick="addFavorites('F08224')"
+                        type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('F08224')"
+                        type="button">立即购买</button></p>
+            </div>
+        </li>
+    </ul>
+    </div>
+    <h3 class="wareTitle">生日蛋糕<a class="more" href="/Goods/DanGao">更多&gt;&gt;</a>
+    </h3>
+    <div class="listsGroup indexLists">
+        <ul class="lists clear">
+            <li class="listsItem">
+                <div class="listLink">
+                    <p class="imgs"><a href="/GD08280-1.html"><img class="lazy" src="http://img.vnasi.com/attachment/achimg/201901/5c39b547ed7de.jpg"></a></p>
+                    <p class="title"><a href="/GD08280-1.html">元祖|初恋的感觉鲜奶蛋糕,6寸</a></p>
+                    <p class="price"><a href="/GD08280-1.html">¥198.00</a></p>
+                    <p class="others">售出 1100<span class="sep"></span>喜欢 24463</p>
+                    <p class="operation"><button class="btn btn-default" onclick="addFavorites('D08280-1')"
+                            type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('D08280-1')"
+                            type="button">立即购买</button></p>
+                </div>
+            </li>
+            <li class="listsItem">
+                <div class="listLink">
+                    <p class="imgs"><a href="/GD08269-1.html"><img class="lazy" src="http://img.vnasi.com/attachment/achimg/201901/5c39b59ed7167.jpg"></a></p>
+                    <p class="title"><a href="/GD08269-1.html">元祖|金蜜蜂鲜奶蛋糕,6寸</a></p>
+                    <p class="price"><a href="/GD08269-1.html">¥198.00</a></p>
+                    <p class="others">售出 500<span class="sep"></span>喜欢 6056</p>
+                    <p class="operation"><button class="btn btn-default" onclick="addFavorites('D08269-1')"
+                            type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('D08269-1')"
+                            type="button">立即购买</button></p>
+                </div>
+            </li>
+            <li class="listsItem">
+                <div class="listLink">
+                    <p class="imgs"><a href="/GD05744-1.html"><img class="lazy" src="http://img.vnasi.com/attachment/goods/800/201503/550ba2215b8aa.jpg"></a>
+                    </p>
+                    <p class="title"><a href="/GD05744-1.html">美味旅程,8寸</a></p>
+                    <p class="price"><a href="/GD05744-1.html">¥178.00</a></p>
+                    <p class="others">售出 9450<span class="sep"></span>喜欢 135464</p>
+                    <p class="operation"><button class="btn btn-default" onclick="addFavorites('D05744-1')"
+                            type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('D05744-1')"
+                            type="button">立即购买</button></p>
+                </div>
+            </li>
+            <li class="listsItem">
+                <div class="listLink">
+                    <p class="imgs"><a href="/GD08276-1.html"><img class="lazy" src="http://img.vnasi.com/attachment/achimg/201901/5c39b5bc759bd.jpg"></a></p>
+                    <p class="title"><a href="/GD08276-1.html">元祖|莓果仲夏慕斯蛋糕,6寸</a></p>
+                    <p class="price"><a href="/GD08276-1.html">¥239.00</a></p>
+                    <p class="others">售出 550<span class="sep"></span>喜欢 11418</p>
+                    <p class="operation"><button class="btn btn-default" onclick="addFavorites('D08276-1')"
+                            type="button">收藏商品</button><button class="btn btn-theme ml10" onclick="buynowTocart('D08276-1')"
+                            type="button">立即购买</button></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </section>
+    <div class="container floorLinks">
+        <div class="floorTabHead clear">
+        <a class="hover">地区导航</a>   
+        <a>友情链接</a>
+        </div>
+         <div class="floorItem fromnav clear" id="areaslinks"><a href="http://www.vnasi.com/BeiJing_49.html"
+                target="_blank">北京鲜花网</a><span class="sep"></span><a href="http://www.vnasi.com/ShangHai_54.html"
+                target="_blank">上海网络鲜花</a><span class="sep"></span><a href="http://www.vnasi.com/TianJin_55.html"
+                target="_blank">天津送花公司</a><span class="sep"></span><a href="http://www.vnasi.com/AnHui_HeFei_90.html"
+                target="_blank">合肥订花公司</a><span class="sep"></span><a href="http://www.vnasi.com/FuJian_FuZhou_141.html"
+                target="_blank">福州鲜花公司</a><span class="sep"></span><a href="http://www.vnasi.com/GanSu_LanZhou_157.html"
+                target="_blank">兰州订花电话</a><span class="sep"></span><a href="http://www.vnasi.com/GuangDong_GuangZhou_169.html" target="_blank">广州定花服务</a><span 
+                class="sep"></span><a href="http://www.vnasi.com/GuangXi_NanNing_198.html" target="_blank">南宁订花服务</a><span
+                class="sep"></span><a href="http://www.vnasi.com/ChongQing_227.html" target="_blank">重庆鲜花网站</a><span
+                class="sep"></span><a href="http://www.vnasi.com/SanXi_XiAn_229.html" target="_blank">西安送花服务</a><span
+                class="sep"></span><a href="http://www.vnasi.com/HuBei_WuHan_230.html" target="_blank">武汉定花电话</a><span
+                class="sep"></span><a href="http://www.vnasi.com/ZheJiang_HangZhou_231.html" target="_blank">杭州鲜花网</a><span
+                class="sep"></span><a href="http://www.vnasi.com/JiangSu_NanJing_232.html" target="_blank">南京网络鲜花</a><span
+                class="sep"></span><a href="http://www.vnasi.com/GuiZhou_GuiYang_249.html" target="_blank">贵阳送花公司</a><span
+                class="sep"></span><a href="http://www.vnasi.com/HaiNan_HaiKou_257.html" target="_blank">海口订花公司</a><span
+                class="sep"></span><a href="http://www.vnasi.com/HeBei_ShiJiaZhuang_266.html"
+                target="_blank">石家庄鲜花公司</a><span class="sep"></span><a href="http://www.vnasi.com/HeNan_ZhengZhou_282.html"
+                target="_blank">郑州订花电话</a><span class="sep"></span><a
+                href="http://www.vnasi.com/HeiLongJiang_HaErBin_289.html" target="_blank">哈尔滨定花服务</a><span
+                class="sep"></span><a href="http://www.vnasi.com/HuNan_ChangSha_320.html" target="_blank">长沙订花服务</a><span
+                class="sep"></span><a href="http://www.vnasi.com/JiLin_ChangChun_337.html" target="_blank">长春鲜花网站</a><span
+                class="sep"></span><a href="http://www.vnasi.com/JiangXi_NanChang_361.html" target="_blank">南昌送花服务</a><span
+                class="sep"></span><a href="http://www.vnasi.com/LiaoNing_ShenYang_384.html" target="_blank">沈阳定花电话</a><span
+                class="sep"></span><a href="http://www.vnasi.com/NeiMengGu_HuHeHaoTe_393.html"
+                target="_blank">呼和浩特鲜花网</a><span class="sep"></span><a href="http://www.vnasi.com/NingXia_YinChuan_403.html"
+                target="_blank">银川网络鲜花</a><span class="sep"></span><a href="http://www.vnasi.com/QingHai_XiNing_411.html"
+                target="_blank">西宁送花公司</a><span class="sep"></span><a href="http://www.vnasi.com/ShanDong_JiNan_417.html"
+                target="_blank">济南订花公司</a><span class="sep"></span><a href="http://www.vnasi.com/ShanXi_TaiYuan_437.html"
+                target="_blank">太原鲜花公司</a><span class="sep"></span><a href="http://www.vnasi.com/SiChuan_ChengDu_452.html"
+                target="_blank">成都订花电话</a><span class="sep"></span><a href="http://www.vnasi.com/XiZang_LaSa_489.html"
+                target="_blank">拉萨定花服务</a><span class="sep"></span><a href="http://www.vnasi.com/XinJiang_WuLuMuQi_509.html"
+                target="_blank">乌鲁木齐订花服务</a><span class="sep"></span><a href="http://www.vnasi.com/YunNan_KunMing_518.html"
+                target="_blank">昆明鲜花网站</a></div>
+       
+        <div class="floorItem clear" id="links"><a href="http://www.cdvns.com/" target="_blank">成都维纳斯婚纱摄影</a><span
+                class="sep"></span><a href="http://www.shoubiao.com.cn/" target="_blank">手表折扣网</a><span
+                class="sep"></span><a href="http://www.lipingov.cn/" target="_blank">中国礼品网</a><span class="sep"></span><a
+                href="http://www.huopin.cn" target="_blank">火拼云商</a><span class="sep"></span><a href="http://www.sstwh.com"
+                target="_blank">深圳演出公司</a><span class="sep"></span><a href="http://www.discoveryangtze.com"
+                target="_blank">yangtze river cruise</a><span class="sep"></span><a href="http://www.zhuandan.com"
+                target="_blank">转单宝</a><span class="sep"></span><a href="http://www.xiangsidi.com"
+                target="_blank">相思递礼品网</a><span class="sep"></span><a href="http://www.huodongjia.com"
+                target="_blank">活动家</a><span class="sep"></span><a href="http://www.hztiy.com" target="_blank">插花培训</a><span
+                class="sep"></span><a href="http://www.cnzsj.cn" target="_blank">竹纤维产品</a></div> </div>
+    <footer class="footer">
+        <div class="container">
+            <ul class="advantage clear floatl">
+                <li>
+                    <div>
+                        <div class="title">  <img src="image/tu1.png" alt=""> 免费配送</div>
+                        <div class="texts">全国大部分市区免费配送</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="title"> <img src="image/tu2.png" alt=""> 10年品牌</div>
+                        <div class="texts">10年鲜花品牌，值得信赖</div>
+                    </div>
+                </li>
+                <li>  
+                    <div>
+                        <div class="title"><img src="image/tu3.png" alt="">新鲜花材</div>
+                        <div class="texts">昆明新鲜花材，现做现送</div>
+                    </div>
+                </li>
+                <li class="time">
+                    <div>
+                        <div class="title"><img src="image/tu4.png" alt="">3h可达</div>
+                        <div class="texts">全国连锁，快至3h送达</div>
+                    </div>
+                </li>
+                <li class="service">
+                    <div>
+                        <div class="title"><img src="image/tu5.png" alt="">无忧售后</div>
+                        <div class="texts">质量问题全额退款</div>
+                    </div>
+                </li>
+            </ul>
+            <div class="row footHelp clear">
+                <ul class="floatl clear tel" style="width:83%">
+                    <li>
+                        <h4 class="mb25">新手指南</h4>
+                        <p><a href="http://www.vnasi.com/help/vnasi_YongHuFuWuXieYi.html" target="_blank"
+                                rel="nofollow">用户服务协议</a></p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_GouWuLiuCheng.html" target="_blank"
+                                rel="nofollow">购物流程指南</a></p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_zhifu.html" target="_blank" rel="nofollow">支付流程说明</a>
+                        </p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_shouhouzhengce.html" target="_blank"
+                                rel="nofollow">售后服务政策</a></p>
+                    </li>
+                    <li>
+                        <h4 class="mb25">常见问题</h4>
+                        <p><a href="http://www.vnasi.com/help/vnasi_XianhuaChangJianWenTi.html" target="_blank"
+                                rel="nofollow">鲜花订购常见问题</a></p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_dangaochicun.html" target="_blank"
+                                rel="nofollow">蛋糕订购常见问题</a></p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_huiyuanvip.html" target="_blank"
+                                rel="nofollow">注册会员与VIP</a></p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_FaPiaoShuoMing.html" target="_blank"
+                                rel="nofollow">购物发票说明</a></p>
+                    </li>
+                    <li>
+                        <h4 class="mb25">配送方式</h4>
+                        <p><a href="http://www.vnasi.com/help/vnasi_PeiSongShuoMing.html" target="_blank"
+                                rel="nofollow">配送服务说明</a></p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_kuaidifeishuoming.html" target="_blank"
+                                rel="nofollow">快递配送说明</a></p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_songhuafanwei.html" target="_blank"
+                                rel="nofollow">配送范围及费用</a></p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_xianhuadingshipeisong.html" target="_blank"
+                                rel="nofollow">定时配送及费用</a></p>
+                    </li>
+                    <li>
+                        <h4 class="mb25">支付方式</h4>
+                        <p><a href="http://www.vnasi.com/help/vnasi_zaixianzhifu.html" target="_blank"
+                                rel="nofollow">在线支付</a></p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_yinhanghuikuan.html" target="_blank"
+                                rel="nofollow">转账汇款</a></p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_xiansonghuahoufukuan.html" target="_blank"
+                                rel="nofollow">货到付款</a></p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_shangmenshoukuanFuWu.html" target="_blank"
+                                rel="nofollow">上门收款</a></p>
+                    </li>
+                    <li>
+                        <h4 class="mb25">售后服务</h4>
+                        <p><a href="http://www.vnasi.com/help/vnasi_XianHua_ShouHou.html" target="_blank"
+                                rel="nofollow">鲜花售后服务</a></p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_dangaoshouhou.html" target="_blank"
+                                rel="nofollow">蛋糕售后服务</a></p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_LvZhi_ShouHou.html" target="_blank"
+                                rel="nofollow">绿植售后服务</a></p>
+                        <p><a href="http://www.vnasi.com/help/vnasi_LiPin_ShouHou.html" target="_blank"
+                                rel="nofollow">礼品售后服务</a></p>
+                    </li>
+                </ul>
+                <div class="tc">
+                    <p style="margin-bottom: 17px;">
+                        <a class="contact" href="tel:4006520778">4006-520-778</a></p>
+                    <p class="work">周一至周六 8:00-24:00</p>
+                    <p class="work">周末 9:00-18:00</p>
+                    <p class="" style="margin-top: 24px;">
+                        <a title="点击在线客服对话" class="consultation" target="_blank">
+                         <img src="image/tu6.png" alt=""> 在线咨询</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="container copyright">
+        <p><a href="http://www.vnasi.com/About/about_vnasi.html" target="_blank" rel="nofollow">关于我们</a><span
+                class="sep"></span><a href="http://www.vnasi.com/About/vnasi_security.html" target="_blank"
+                rel="nofollow">安全隐私</a><span class="sep"></span><a href="http://www.vnasi.com/About/vnasi_liucheng.html"
+                target="_blank" rel="nofollow">订购流程</a><span class="sep"></span><a
+                href="http://www.vnasi.com/About/vnasi_contact.html" target="_blank" rel="nofollow">联系我们</a><span
+                class="sep"></span><a href="http://www.vnasi.com/About/vnasi_TuanGou.html" target="_blank"
+                rel="nofollow">集团采购</a><span class="sep"></span><a href="http://www.vnasi.com/About/vnasi_GongHuoHeZuo.html"
+                target="_blank" rel="nofollow">供货合作</a><span class="sep"></span><a href="http://www.vnasi.com/help.html"
+                target="_blank" rel="nofollow">帮助中心</a><span class="sep"></span><a href="http://www.vnasi.com/support.html"
+                target="_blank" rel="nofollow">客服中心</a><span class="sep"></span><a href="http://www.vnasi.com/wiki.html"
+                target="_blank" rel="nofollow">鲜花百科</a></p>
+        <p><span>Copyright © 2012-2019&nbsp;维纳斯 All Rights Reserved.</span><a href="//www.miibeian.gov.cn" target="_blank"
+                rel="nofollow">渝ICP备12002514号-6</a></p>
+    </footer>
+        <div class="backtop"> <a href="#">返回顶部</a> </div>
+</body>
+<script src="js/jquery.2.2.4.js" type="text/javascript"></script>
+<script src="js/banner.js"></script>
+<script src="js/ajax.3.0.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script src="js/cookie.js" type="rext/javascript"></script>
+</html>

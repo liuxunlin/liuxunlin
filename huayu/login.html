@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>花雨鲜花网</title>
+	<link rel="icon" type="image/x-ico" href="image/huayu.ico" />
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+	<div class="loginWrap">
+		<div class="w950">
+			<div class="header">
+				<h1>
+					<a title="花语鲜花礼品网" href="http://www.vnasi.com">
+						<img name="Logon_index_denglu009" alt="花语鲜花礼品网"	src="image/logo.png">
+					</a>
+				</h1>
+			</div>
+			<div class="login-box clear">
+				<div class="login-from pull-right">
+					<div class="entry">
+						<form name="LoginForm" class="nice-validator n-yellow" id="LoginForm" action="" method="post" novalidate="novalidate">
+							<input name="ReturnUrl" type="hidden" value="http://www.vnasi.com/">
+							<h2 class="title">会员登录</h2>
+							<div class="alert alert-success" role="alert" style="display: none;"></div>
+							<div class="alert alert-info" role="alert" style="display: none;"></div>
+							<div class="alert alert-danger" role="alert" style="display: none;"></div>
+							<div class="form-group">
+								<div class="input-group">
+									<div class="input-group-addon">
+										<i class="glyphicon glyphicon-user"></i>
+									</div>用户名:
+									<input name="account" class="form-control"  id="user" type="text" placeholder="邮箱/用户名/已验证手机">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<div class="input-group-addon">
+										<i class="icon-key"></i>
+									</div>密码:
+									<input name="password" class="form-control" id="pass"  type="password" placeholder="有效的登录密码">
+									 <div class="message"></div>
+								</div>
+							</div>
+							<div>
+							 <input id="inlineCheckbox1" type="checkbox"
+										value="option1">自动登录
+							   <a class="pull-right" href="#">忘记登录密码？</a>
+							</div>
+							<input type="button" name="btn" id="btn" value="登录" class="btn btn-danger"/>
+						</form>
+					</div>
+				</div>
+				<div class="freeRegister"><span class="testing"></span></span><span><a href="reg.html">免费注册&gt;&gt;</a></span></div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery.2.2.4.js"></script>
+<script>
+   class Login{
+			constructor(){
+				this.url = "http://www.icodeilife.cn/ctrl/login.php";
+				
+				this.init()
+			}
+			init(){
+				var that = this;
+				$("#btn").click(function(){
+					that.load()
+				})
+			}
+			load(){
+				var that = this;
+				$.ajax({
+					url:this.url,
+					data:{
+						user:$("#user").val(),
+						pass:$("#pass").val()
+					},
+					success:function(res){
+						switch(res){
+							case "0":
+								$(".testing").html("重新登录");
+								
+							case "1":
+								$(".testing").html("");
+								setTimeout(()=>{
+									location.href = "file:///C:/Users/91747/Desktop/huayu/index.html"
+								},1000)
+							default:
+								$(".testing").html("用户名或密码重复");
+							}
+						}
+					})
+			}
+		}
+		new Login;
+</script>
+</html>
