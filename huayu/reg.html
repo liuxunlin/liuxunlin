@@ -125,59 +125,8 @@ $("#pass2").on("blur", function () {
         p2onOff = false;
     }
 });
-
-// var Register = function () {
-//     function Register() {
-//         classCallCheck(this, Register);
-
-//         this.url = "http://www.icodeilife.cn/ctrl/register.php";
-
-//         this.init();
-//     }
-
-//     createClass(Register, [{
-//          key: "init",
-//         value: function init() {
-//             var that = this;
-//             $("#btn").click(function () {
-//                 if (uonOff && ponOff && p2onOff) {
-//                     that.load();
-//                 }
-//             });
-//         }
-//     }, {
-//         key: "load",
-//         value: function load() {
-//             $.ajax({
-//                 url: this.url,
-//                 success: function success(res) {
-//                     switch (res) {
-//                         case "0":
-//                             $("#user").html("用户名重复");break;
-//                         case "1":
-//                             setTimeout(function () {
-//                                 location.href = "http://localhost/huayu/reg.html";
-//                             }, 1000);
-//                             break;
-//                         case "2":
-//                             $("tips span").html("数据不全");break;
-//                     }
-//                 },
-//                 data: {
-//                     tel: $("#user").val(),
-//                     pass: $("#pass").val()
-//                 }
-//             });
-//         }
-//     }]);
-
-//     return Register;
-
-// }();
-
 class Register{
 			constructor(){
-//				1.先准备好接口
 				this.url = "http://www.icodeilife.cn/ctrl/register.php";
 				
 				this.init();
@@ -185,30 +134,26 @@ class Register{
 			init(){
 				var that = this;
 				$("#btn").click(function(){
-//					3.触发事件时开启ajax
 					that.load()
 				})
 			}
 			load(){
 				$.ajax({
-//					4.使用接口
 					url:this.url,
-//					7.成功之后的处理
 					success:function(res){
 						switch(res){
 							case "0":
 								$(".tips span").html("用户名重复");break;
 							case "1":
-								$(".tips span").html("注册成功，5秒后跳转到登录");
+								$(".tips span").html("注册成功");
 								setTimeout(()=>{
 									location.href = "login.html";
-								},5000)
+								},500)
 								break;
 							case "2":
 								$(".tips span").html("数据不全");break;
 						}
 					},
-//					5.发送数据
 					data:{
 						tel:$("#user").val(),
 						pass:$("#pass").val()

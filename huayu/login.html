@@ -86,16 +86,16 @@
 					success:function(res){
 						switch(res){
 							case "0":
-								$(".testing").html("重新登录");
-								
+								$(".testing").html("用户名密码不符");break;
 							case "1":
-								$(".testing").html("");
-								setTimeout(()=>{
-									location.href = "file:///C:/Users/91747/Desktop/huayu/index.html"
-								},1000)
+								$(".testing").html("重新登录");break;
 							default:
-								$(".testing").html("用户名或密码重复");
-							}
+								$(".testing").html("登录成功");
+								setTimeout(()=>{
+									location.href = "index.html";
+								},1000);
+								that.res = JSON.parse(res)
+						}
 						}
 					})
 			}
